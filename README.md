@@ -1,4 +1,11 @@
-# **ArkStack - Build and Debug AI Agents with Ease**
+![arkstack](https://raw.githubusercontent.com/Ark-Stack/docs/main/media/hero.png)
+
+<div align="center">
+
+### **CA:**
+
+</div>
+
 
 ## **1. Introduction**
 
