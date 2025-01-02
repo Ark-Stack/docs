@@ -27,7 +27,7 @@ By combining Chidori’s **advanced runtime features**—such as **pause/resume*
 5. **Code Interpreter Environments**:  
    - Chidori supports secure execution of Python and JavaScript code, with restrictions on imports and operations to prevent malicious behavior.  
 
-Chidori’s **reactive runtime** and **visual debugging interface** make it an ideal platform for orchestrating complex agent workflows, especially in enterprise environments where **reliability** and **observability** are critical.
+Chidori’s **reactive runtime** and **visual debugging interface** make it an ideal framework for building and debugging complex agents, especially in enterprise environments where **reliability** and **observability** are critical.
 
 ---
 
