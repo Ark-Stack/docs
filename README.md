@@ -1,16 +1,16 @@
-# ** ArkStack - Build and Debug AI Agents with Ease**
+# **ArkStack - Build and Debug AI Agents with Ease**
 
 ## **1. Introduction**
 
 ### **1.1 Purpose**
-This RFC outlines the design and implementation of **ArkStack** that integrates **Chidori**, a reactive runtime for orchestrating agentic goals, with **smolagents**, a lightweight library for building auto generating code-driven AI agents. The goal of this is to provide developers with a **flexible, efficient, and transparent framework** for creating AI agents that can interact with the real world, solve complex tasks, and adapt..
+This RFC outlines the design and implementation of **ArkStack** that integrates **[Chidori](https://github.com/ThousandBirdsInc/chidori)**, a reactive runtime for orchestrating agentic goals, with **[smolagents](https://github.com/huggingface/smolagents)**, a lightweight library for building auto generating code-driven AI agents. The goal of this is to provide developers with a **flexible, efficient, and transparent framework** for creating AI agents that can interact with the real world, solve complex tasks, and adapt..
 
 By combining Chidori’s **advanced runtime features**—such as **pause/resume**, **time-travel debugging**, and **execution graph visualization**—with smolagents’ **code generation** and **tool integration** capabilities, we adress key challenges in agent development and unlock new powerful features for **multi-step, multi-agent systems**. This integration allows devs to build **understandable, secure, and transparent agents** that can handle real-world complex use-case with ease.
 
 --- 
 
 ### **1.2 What is Chidori?**
-**Chidori** is an open-source orchestrator, runtime, and IDE designed for building software in symbiosis with modern AI tools. It is specifically tailored for **AI agents** and provides solutions to the following challenges:
+**[Chidori](https://github.com/ThousandBirdsInc/chidori)** is an open-source orchestrator, runtime, and IDE designed for building software in symbiosis with modern AI tools. It is specifically tailored for **AI agents** and provides solutions to the following challenges:
 
 1. **Understanding Agent Behavior**:  
    - Chidori enables developers to understand what an agent is doing and how it arrived at a given state through **time-travel debugging** and **visual execution graphs**.  
@@ -32,7 +32,7 @@ Chidori’s **reactive runtime** and **visual debugging interface** make it an i
 ---
 
 ### **1.3 What is smolagents?**
-**smolagents** is a lightweight library for building **code-driven AI agents**. It focuses on simplicity and efficiency, enabling developers to create powerful agents in just a few lines of code. Key features of smolagents include:
+**[smolagents](https://github.com/huggingface/smolagents)** is a lightweight library for building **code-driven AI agents**. It focuses on simplicity and efficiency, enabling developers to create powerful agents in just a few lines of code. Key features of smolagents include:
 
 1. **Code-Driven Agents**:  
    - smolagents’ `CodeAgent` generates and executes Python code to perform actions, offering greater flexibility and efficiency compared to traditional JSON-based tool calls.  
