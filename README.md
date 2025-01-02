@@ -272,11 +272,6 @@ Time-travel debugging allows developers to revert the execution graph to a previ
 ```
 
 ---
-
-Got it! Below is a refined and expanded **Code Generation (smolagents Integration)** section for the RFC. I’ve added technical depth, formal algorithms, examples, and ASCII diagrams to make the content comprehensive and accessible.
-
----
-
 ## **4. Code Generation (smolagents Integration)**
 
 ### **4.1 Code Agents**
@@ -409,8 +404,6 @@ manager_agent = ManagedAgent(
 result = manager_agent.run("Analyze the latest AI research papers")
 ```
 
----
-
 ### **5.3 ArkStack Support for Multi-Agent Execution**
 ArkStack provides **execution tracking** and **observability** for multi-agent systems, enabling developers to monitor and debug the behavior of individual agents and their interactions.
 
@@ -501,15 +494,12 @@ manager_agent = ManagedAgent(
 # Run the multi-agent system
 result = manager_agent.run("Analyze the latest AI research papers")
 ```
+## **6. Vector Store Integration**
 
-Got it! Below are **three new chapters** for the features you’d like to add to the platform: **Vector Store Integration**, **Advanced Tooling**, and **Enhanced Debugging and Observability**. Each chapter is structured to provide **technical depth**, **examples**, and **use cases**.
+### **6.1 Overview**
+Vector stores are essential for tasks like **retrieval-augmented generation (RAG)**, **semantic search**, and **memory management** in AI agents. This section explores how **ArkStack** integrates vector stores to enhance agent capabilities, enabling efficient storage, retrieval, and management of embeddings.
 
-## **9. Vector Store Integration**
-
-### **9.1 Overview**
-Vector stores are essential for tasks like **retrieval-augmented generation (RAG)**, **semantic search**, and **memory management** in AI agents. This chapter explores how **ArkStack** integrates vector stores to enhance agent capabilities, enabling efficient storage, retrieval, and management of embeddings.
-
-### **6 Built-in Vector Store**
+### **6.2 Built-in Vector Store**
 ArkStack includes a **simple, local vector store** for development and prototyping. This built-in store is optimized for efficiency and ease of use, making it ideal for small-scale applications.
 
 #### **Features**:
@@ -522,7 +512,7 @@ ArkStack includes a **simple, local vector store** for development and prototypi
 
 ---
 
-### **6.1 Support for External Vector Stores**
+### **6.3 Support for External Vector Stores**
 ArkStack supports integration with **external vector databases**, enabling scalable and production-ready solutions for managing embeddings.
 
 #### **Supported Databases**:
@@ -543,7 +533,7 @@ results = vector_store.search(query_embedding, top_k=5)
 
 ---
 
-### **6.2 Use Cases**
+### **6.4 Use Cases**
 1. **Retrieval-Augmented Generation (RAG)**:  
    - Use vector stores to retrieve relevant documents or data for generating context-aware responses.  
 2. **Semantic Search**:  
@@ -556,7 +546,7 @@ results = vector_store.search(query_embedding, top_k=5)
 ## **7. Remote Tools and Functions**
 
 ### **7.1 Overview**
-In **ArkStack**, tools are **remote functions** that agents can call to perform specific tasks, such as web searches, data processing, or API interactions. These tools are **stored remotely** and can be dynamically discovered and integrated into agent workflows. This chapter explores how **ArkStack** leverages **smolagents’ support for remote tools** and provides a **marketplace and hub** for sharing and using these tools.
+In **ArkStack**, tools are **remote functions** that agents can call to perform specific tasks, such as web searches, data processing, or API interactions. These tools are **stored remotely** and can be dynamically discovered and integrated into agent workflows. This section explores how **ArkStack** leverages **smolagents’ support for remote tools** and provides a **marketplace and hub** for sharing and using these tools.
 
 ---
 
@@ -581,10 +571,8 @@ model_download_tool = load_tool(
 )
 ```
 
----
-
 ### **7.3 Marketplace and Hub**
-ArkStack provides a **marketplace and hub** for uploading, sharing, and using remote tools. This hub serves as a **centralized platform** for developers to discover and contribute tools.
+ArkStack medium term will provide a **marketplace and hub** for uploading, sharing, and using remote tools. This hub would serve as a **centralized platform** for developers to discover and contribute tools.
 
 #### **Features of the Marketplace**:
 - **Tool Discovery**:  
@@ -614,14 +602,6 @@ model_downloads_tool.push_to_hub("{your_username}/hf-model-downloads", token="")
    - Share tools with the community and leverage contributions from other developers.  
 4. **Scalability**:  
    - Use remote tools to scale agent functionality across multiple projects and environments.  
-
----
-
-### **7.5 Integration with Hugging Face Hub**
-ArkStack also integrates with the **Hugging Face Hub**, which currently supports storing tools for smolagents. This integration allows developers to:  
-- **Access Tools**: Load tools directly from the Hugging Face Hub.  
-- **Share Tools**: Upload tools to both HF and ArkStack for others to use.  
-- **Version Tools**: Manage tool versions and dependencies through the Hub.  
 
 ---
 
@@ -693,7 +673,7 @@ dashboard.show()
 * [x] Branching and time travel debugging, reverting execution of a graph
 * [x] Node.js, Python, and Rust support for building and executing graphs
 * [x] Simple local vector db for development
-* [~] Integrate smolagents library for code generation execution (in-progress)
+* [x] Integrate smolagents library for code generation execution (in-progress)
 * [ ] Combine Chidori’s time-travel debugging with smolagents’ execution logs for a seamless debugging experience.
 * [ ] Expand the tool registry to support dynamic tool discovery and registration.
 
@@ -750,14 +730,11 @@ ArkStack offers several **key benefits** for developers, making it a powerful pl
    - Secure execution environments (e.g., **local Python interpreter**, **E2B sandbox**) ensure safe execution of generated code.  
    - Comprehensive logging and monitoring features provide a robust audit trail for debugging and analysis.  
 
-7. **Developer Experience**:  
-   - TypeScript support (upcoming) provides **type safety**, **better tooling**, and **enhanced performance** for developers.  
-   - The **marketplace and hub** for remote tools fosters collaboration and reuse within the developer community.  
 
 ---
 
-### **10.3 Future Outlook**
-ArkStack is designed to evolve with the needs of developers and the AI community. Future developments include:
+### **10.3 Future dev directions**
+Future developments include:
 - **TypeScript smolagent Port**: One of the primary goals for future development is to also **port smolagents to TypeScript**.  **Chidori** and **E2B** natively support JavaScript/TypeScript. The port will provide language flexibility and also improve the developer experience by providing **type safety**, **better tooling**, and **enhanced performance**.
 - **Tool Marketplace**: A centralized hub for sharing and discovering remote tools, enabling rapid prototyping and collaboration.  
 - **Advanced Debugging Features**: Continued enhancements to debugging and observability tools, including **real-time metrics** and **automated error detection**.  
